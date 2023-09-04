@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- axios는 promise 객체이기 때문에 .then .catch 사용 가능합니다. -->
+    
+    
+</head>
+<body>
+    <h1>Axios로 데이터 가져와서 표시하기</h1>
+    <div id="data-container"></div>
+    
+    <script src="script.js"></script>
+
+    <!-- <script>
+
+
+        axios
+
+        .get("https://jsonplaceholder.typicode.com/todos/1")
+
+        .then(function displayData(result) {
+
+        console.log("통신 결과 : ", result);
+
+        console.log("status : ", result.status);
+
+        console.log("data : ", result.data);
+
+        const dataHTML = `
+            <p><strong>이름:</strong> ${result}</p>
+            <p><strong>나이:</strong> ${result.status}</p>
+            <p><strong>이메일:</strong> ${result.data}</p>
+        `;
+        dataContainer.innerHTML = dataHTML;
+        })
+
+        .catch(function (error) {
+
+        console.log("에러 발생 : ", error);
+
+        });
+
+        alert("사랑 : ", dataHTML);
+
+        displayData(dataHTML);
+        console.log("바로 실행 로그");
+
+    </script> -->
+</body>
+</html>

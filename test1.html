@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>데이터 표시 예제</h1>
+    <div id="data-container"></div>
+
+    <script>
+        // 가져온 데이터 (예: JSON 데이터)
+        const jsonData = {
+            name: 'John Doe',
+            age: 30,
+            email: 'john@example.com'
+        };
+
+        // 데이터를 가져와서 HTML에 표시하는 함수
+        function displayData(data) {
+            const dataContainer = document.getElementById('data-container');
+            const dataHTML = `
+                <p><strong>이름:</strong> ${data.name}</p>
+                <p><strong>나이:</strong> ${data.age}</p>
+                <p><strong>이메일:</strong> ${data.email}</p>
+            `;
+            dataContainer.innerHTML = dataHTML;
+        }
+
+        // 데이터를 가져와서 표시
+        displayData(jsonData);
+    </script>
+</body>
+</html>
